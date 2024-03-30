@@ -1,3 +1,5 @@
+
+// code for logging data into SD card
 #include <SD.h>
 
 #define CS_PIN 5
