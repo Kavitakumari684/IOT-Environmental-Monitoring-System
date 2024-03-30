@@ -1,3 +1,4 @@
+// code for send data on Thingspeak
 #include <WiFi.h>
 #include <ThingSpeak.h>
 //#include<WiFiClient.h>
