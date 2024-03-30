@@ -1,4 +1,4 @@
-// code for send data on Thingspeak
+// code for Temperature and Humidity data on Thingspeak
 #include <WiFi.h>
 #include <ThingSpeak.h>
 //#include<WiFiClient.h>
