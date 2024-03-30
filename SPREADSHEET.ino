@@ -1,3 +1,4 @@
+// code for Logging data on Google Spreadsheet
 #include "WiFi.h"
 #include <HTTPClient.h>
 #include "time.h"
@@ -80,3 +81,26 @@ void loop() {
   count++;
   delay(1000);
 }
+
+
+// code for app script
+/*
+var sheet_id = "1KJ7hB_2GpLXvhKVCrxLsYQgnQCl8o14hsZApuCfoj-g"; // Google Sheet ID
+var sheet_name = "DHT11SENSOR_DATA"; // Sheet name
+
+function doGet(e){
+  var ss = SpreadsheetApp.openById(sheet_id);
+  var sheet = ss.getSheetByName(sheet_name);
+  
+  // Extract parameters from the request
+  var sensor = Number(e.parameter.sensor);
+  var date = e.parameter.date;
+  var temperature = e.parameter.temperature; // Added temperature parameter
+  var humidity = e.parameter.humidity;       // Added humidity parameter
+  
+  // Append data to the sheet
+  sheet.appendRow([sensor, date, temperature, humidity]); // Append sensor, date, temperature, and humidity to the sheet
+}
+*/
+// This code is add when setting google spreadsheet
+// google drive --> new---->spreadsheet--->go to extention ---> appscript----> add this code -->change this code according to your spread sheet name and id
